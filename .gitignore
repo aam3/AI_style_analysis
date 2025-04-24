@@ -53,3 +53,4 @@ ipython_config.py
 *.gif
 data/copyrighted/
 modules/
+*.DS_Store
