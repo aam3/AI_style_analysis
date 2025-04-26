@@ -3,9 +3,9 @@ import numpy as np
 class Document:
     """Represents a processed text document with accessible attributes."""
     
-    def __init__(self, raw_text, title=None):
+    def __init__(self, raw_text, doc_name, title=None):
         self.text = raw_text
-        self.title = title or "Untitled Document"
+        self.name = doc_name
         self.sentences = []
         self.embeddings = None
         self.reduced_embeddings = None

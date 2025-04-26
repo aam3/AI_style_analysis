@@ -13,7 +13,7 @@ class CreativeTextTool:
         # self.dimension_reducer = DimensionReducer()
         # self.metrics_calculator = MetricsCalculator()
         
-    def create_document_from_prompt(self, prompt_template, **prompt_params):
+    def create_document_from_prompt(self, prompt_template, doc_name, **prompt_params):
         """Generate text and create a Document from it."""
         # Generate text
         raw_text = self.text_generator.generate(prompt_template, **prompt_params)
@@ -21,10 +21,10 @@ class CreativeTextTool:
         # Create and process document
         return self.create_document(raw_text)
 
-    def create_document(self, text):
+    def create_document(self, text, doc_name):
         """Create a Document from existing text."""
         # Initialize document
-        document = Document(text)
+        document = Document(text, doc_name)
         
         # Process the document
         self._process_document(document)
@@ -38,8 +38,6 @@ class CreativeTextTool:
         
         # Generate embeddings
         document.embeddings = self.embedding_generator.generate_embeddings(document.sentences)
-
-        document.cov_matrix = self.embedding_generator.compute_covariance_matrix(document.embeddings)
         
         # # Reduce dimensions
         # document.reduced_embeddings = self.dimension_reducer.reduce(document.embeddings)
