@@ -11,6 +11,21 @@ class Metrics:
     #     """Initialize the Claude API client"""
     #     return anthropic.Anthropic(api_key=self.api_key)
 
+    def compute_covariance_matrix(self, embeddings, normalize=True):
+        # Normalize embeddings if requested
+        if normalize:
+            norms = np.linalg.norm(embeddings, axis=1, keepdims=True)
+            embeddings = embeddings / norms
+        
+        # Center the embeddings
+        embeddings_centered = embeddings - np.mean(embeddings, axis=0)
+        
+        # Compute covariance matrix
+        n_samples = embeddings.shape[0]
+        cov_matrix = np.dot(embeddings_centered.T, embeddings_centered) / (n_samples - 1)
+
+        return cov_matrix    
+
     def compute_mean_similarity_by_window(self, embeddings: np.ndarray, window_size: int = 1, normalize: bool = True, centroid = False ) -> Tuple[float, Dict]:
         
         if window_size is not None and window_size < 1:

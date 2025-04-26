@@ -1,4 +1,7 @@
 from .load_text_file import load_text_file
-# from .reducer import DimensionReducer
+from .plot_1D_trace_and_similarities import plot_1D_trace_and_similarities
+from .compare_embedding_distributions_1d import compare_embedding_distributions_1d
+from .compare_embedding_distributions import compare_embedding_distributions
+from .reduce_dimensions import reduce_dimensions
 
-__all__ = ['load_text_file']
+__all__ = ['load_text_file','plot_1D_trace_and_similarities','compare_embedding_distributions_1d','compare_embedding_distributions','reduce_dimensions']

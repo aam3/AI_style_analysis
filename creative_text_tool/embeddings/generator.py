@@ -16,18 +16,3 @@ class EmbeddingGenerator:
         
     def generate_embeddings(self, sentences):
         return self.model.encode(sentences)
-
-    def compute_covariance_matrix(self, embeddings, normalize=True):
-        # Normalize embeddings if requested
-        if normalize:
-            norms = np.linalg.norm(embeddings, axis=1, keepdims=True)
-            embeddings = embeddings / norms
-        
-        # Center the embeddings
-        embeddings_centered = embeddings - np.mean(embeddings, axis=0)
-        
-        # Compute covariance matrix
-        n_samples = embeddings.shape[0]
-        cov_matrix = np.dot(embeddings_centered.T, embeddings_centered) / (n_samples - 1)
-
-        return cov_matrix
