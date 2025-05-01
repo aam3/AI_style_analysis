@@ -3,5 +3,6 @@ from .plot_1D_trace_and_similarities import plot_1D_trace_and_similarities
 from .compare_embedding_distributions_1d import compare_embedding_distributions_1d
 from .compare_embedding_distributions import compare_embedding_distributions
 from .reduce_dimensions import reduce_dimensions
+from .format_conversation_from_lists import format_conversation_from_lists
 
-__all__ = ['load_text_file','plot_1D_trace_and_similarities','compare_embedding_distributions_1d','compare_embedding_distributions','reduce_dimensions']
+__all__ = ['load_text_file','plot_1D_trace_and_similarities','compare_embedding_distributions_1d','compare_embedding_distributions','reduce_dimensions','format_conversation_from_lists']

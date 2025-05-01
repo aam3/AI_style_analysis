@@ -1,0 +1,31 @@
+Using between 110 and 130 sentences, write an essay in which a newcomer arrives in a big city for what was intended to be a brief stay but remains for years until disillusionment and personal crisis prompt relocation..
+
+<content>
+Your response should describe the following physical scenery in order:
+1. Arrival at airport followed by days of illness in an uncomfortable hotel room.
+2. Various living spaces characterized by impermanence, minimal furnishing, and makeshift decorations.
+3. Urban landscapes at different times of day: early morning streets, evening walks, eating fruit on corners, and late nights in bars.
+
+
+
+The narrator should also undergo the following internal emotional states in order:
+1. Initial wonder and romantic idealization with belief that extraordinary possibilities await around every corner.
+2. Gradual disillusionment as reality fails to match expectations and consequences of past choices become apparent.
+3. Profound emotional decline marked by uncontrollable sadness, avoidance behaviors, and disconnection until accepting change and finding peace elsewhere.
+</content>
+
+<task>
+In summary, your task is to write a personal essay using a voice/style that matches the example text below.
+</task>
+
+<requirements>
+Include all 3 physical scenes and all 3 internal emotional states of the narrator. Your response should be between 110 and 130 sentences, where sentences are distinguished by a full stop '.'.
+</requirements>
+
+<style>
+Adopt a writing voice/style that matches the voice/style in the following example:  
+<example-text>
+It is easy to see the beginnings of things, and harder to see the ends. I can remember now, with a clarity that makes the nerves in the back of my neck constrict, when New York began for me, but I cannot lay my finger upon the moment it ended, can never cut through the ambiguities and second starts and broken resolves to the exact place on the page where the heroine is no longer as optimistic as she once was. When I first saw New York I was twenty, and it was summertime, and I got off a DC-7 at the old Idlewild temporary terminal in a new dress which had seemed very smart in Sacramento but seemed less smart already, even in the old Idlewild temporary terminal, and the warm air smelled of mildew and some instinct, programmed by all the movies I had ever seen and all the songs I had ever heard sung and all the stories I had ever read about New York, informed me that it would never be quite the same again. In fact it never was. Some time later there was a song on all the jukeboxes on the upper East Side that went "but where is the schoolgirl who used to be me," and if it was late enough at night I used to wonder that. I know now that almost everyone wonders something like that, sooner or later and no matter what he or she is doing, but one of the mixed blessings of being twenty and twenty-one and even twenty-three is the conviction that nothing like this, all evidence to the contrary notwithstanding, has ever happened to anyone before.
+</example-text>
+</style>
+    
