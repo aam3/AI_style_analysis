@@ -52,11 +52,11 @@ def compare_embedding_distributions_1d(embeddings_a, embeddings_b, labels, embed
     # Reduce dimensions to 1D
     reduced_a = reduce_dimensions(embeddings_a, n_components=1)
     reduced_b = reduce_dimensions(embeddings_b, n_components=1)
-    if embeddings_c:
+    if embeddings_c is not None:
         reduced_c = reduce_dimensions(embeddings_c, n_components=1)
     
     # Estimate densities using a common grid for fair comparison
-    if embeddings_c:
+    if embeddings_c is not None:
         min_val = min(reduced_a.min(), reduced_b.min(), reduced_c.min())
         max_val = max(reduced_a.max(), reduced_b.max(), reduced_c.max())
     else:
@@ -72,19 +72,19 @@ def compare_embedding_distributions_1d(embeddings_a, embeddings_b, labels, embed
     # Create KDE for both distributions
     kde_a = stats.gaussian_kde(reduced_a.flatten())
     kde_b = stats.gaussian_kde(reduced_b.flatten())
-    if embeddings_c:
+    if embeddings_c is not None:
         kde_c = stats.gaussian_kde(reduced_c.flatten())
     
     # Evaluate on common grid
     density_a = kde_a(common_grid)
     density_b = kde_b(common_grid)
-    if embeddings_c:
+    if embeddings_c is not None:
         density_c = kde_c(common_grid)
     
     # Normalize
     density_a = density_a / (density_a.sum() * (common_grid[1] - common_grid[0]))
     density_b = density_b / (density_b.sum() * (common_grid[1] - common_grid[0]))
-    if embeddings_c:
+    if embeddings_c is not None:
         density_c = density_c / (density_c.sum() * (common_grid[1] - common_grid[0]))
     
     # Calculate divergences
@@ -101,7 +101,7 @@ def compare_embedding_distributions_1d(embeddings_a, embeddings_b, labels, embed
         plt.subplot(2, 1, 1)
         plt.hist(reduced_a, bins=30, alpha=0.5, label=labels[0], density=True)
         plt.hist(reduced_b, bins=30, alpha=0.5, label=labels[1], density=True)
-        if embeddings_c:
+        if embeddings_c is not None:
             plt.hist(reduced_c, bins=30, alpha=0.5, label=labels[2], density=True)
         plt.title('Histogram of 1D Reduced Embeddings')
         plt.legend()
@@ -110,13 +110,13 @@ def compare_embedding_distributions_1d(embeddings_a, embeddings_b, labels, embed
         plt.subplot(2, 1, 2)
         plt.plot(common_grid, density_a, 'b-', label=labels[0])
         plt.plot(common_grid, density_b, 'r-', label=labels[1])
-        if embeddings_c:
+        if embeddings_c is not None:
             plt.plot(common_grid, density_c, 'g-', label=labels[2])
         plt.fill_between(common_grid, density_a, density_b, 
                          where=(density_a > density_b), alpha=0.3, color='blue')
         plt.fill_between(common_grid, density_a, density_b, 
                          where=(density_b > density_a), alpha=0.3, color='red')
-        if embeddings_c:
+        if embeddings_c is not None:
             plt.fill_between(common_grid, density_a, density_c, 
                              where=(density_c > density_a), alpha=0.3, color='green')
         plt.title(f'Density Comparison\nKL(B||A): {kl_div_b_to_a:.4f}, KL(A||B): {kl_div_a_to_b:.4f}, JS: {js_div:.4f}')

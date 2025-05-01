@@ -12,11 +12,19 @@ class CreativeTextTool:
         self.embedding_generator = EmbeddingGenerator()
         # self.dimension_reducer = DimensionReducer()
         # self.metrics_calculator = MetricsCalculator()
-        
-    def create_document_from_prompt(self, prompt_template, doc_name, **prompt_params):
+
+    def return_text_from_prompt(self, messages, system_prompt=""):
         """Generate text and create a Document from it."""
         # Generate text
-        raw_text = self.text_generator.generate(prompt_template, **prompt_params)
+        raw_text = self.text_generator.generate(messages, system_prompt)
+        
+        # Create and process document
+        return raw_text     
+        
+    def create_document_from_prompt(self, messages, doc_name, system_prompt=""):
+        """Generate text and create a Document from it."""
+        # Generate text
+        raw_text = self.text_generator.generate(messages, system_prompt)
         
         # Create and process document
         return self.create_document(raw_text)

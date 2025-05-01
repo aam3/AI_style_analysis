@@ -16,7 +16,7 @@ def plot_1D_trace_and_similarities(x_number_of_sentences, docs_to_analyze, color
     ax1.set_xlabel('Number of Sentences')
     ax1.set_ylabel('Value')
     ax1.legend()
-    ax1.grid(True)
+    ax1.grid(False)
     
     
     # Plot 2: Variance of COV matrix diagonal
@@ -29,7 +29,7 @@ def plot_1D_trace_and_similarities(x_number_of_sentences, docs_to_analyze, color
     ax2.set_xlabel('Number of Sentences')
     ax2.set_ylabel('Value')
     ax2.legend()
-    ax2.grid(True)
+    ax2.grid(False)
     
     # Plot 3: Similarity STD
     window_size = 2
@@ -47,7 +47,7 @@ def plot_1D_trace_and_similarities(x_number_of_sentences, docs_to_analyze, color
     ax3.set_xlabel('Number of Sentences')
     ax3.set_ylabel('Value')
     ax3.legend()
-    ax3.grid(True)
+    ax3.grid(False)
     
     # Adjust layout to prevent overlap
     plt.tight_layout()

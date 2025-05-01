@@ -1,0 +1,28 @@
+Using between 110 and 130 sentences, write an essay in which a young adult moves to a city for what was intended to be a brief stay, spends several years working and socializing before experiencing emotional decline, marrying, and permanently relocating elsewhere..
+
+<content>
+Your excerpt should explore the following physical environments:   
+1. Arrival at an airport followed by an initial stay in an uncomfortable hotel room with a mistaken view.
+2. Various urban locations including minimally furnished living spaces, commercial streets, office buildings with illuminated signs, and rain-slicked streets at night.
+3. Sensory experiences including tastes and smells of the city, weather phenomena affecting living quarters, and early morning light after sleepless nights.
+
+
+
+You should also explicate the following internal emotional states of your subjects in order:   
+1. Initial enchantment and infatuation with urban life, accompanied by feelings of unlimited potential and viewing oneself as a temporary visitor.
+2. Development of romantic attachment while maintaining psychological distance, avoiding commitment to permanence.
+3. Ultimate disillusionment and emotional exhaustion, leading to detachment, uncontrollable sadness, and recognition of having overstayed.
+
+</content>
+
+<style>
+You are commenting on your observations in an essay format; not a formal paper. You should maintain a scientific, objective tone.
+</style>
+
+<task>
+In summary, your task is to write an observational essay as a social scientist with the above style. 
+</task>
+
+<requirements>
+Make sure to include all 3 physical scenes and all 3 internal emotional states of your subjects. Your response should be between 110 and 130 sentences, where sentences are distinguished by a full stop '.'.
+</requirements>

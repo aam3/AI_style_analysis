@@ -1,0 +1,56 @@
+You are a writer and you are writing a personal essay. Using between 110 and 130 sentences, write an essay in which a youth's eight-year urban experience transforms from initial optimism to breakdown and eventual relocation..
+
+<style>
+Invoke a writing voice/style that includes the following elements:
+
+
+## Tone and Emotional Aspects
+
+* Convey a sense of wistful detachment, as if observing your younger self from a distance
+* Maintain a dry, unsentimental tone even when describing emotionally charged events
+* Employ understated melancholy rather than overt expressions of sadness
+* Mix vulnerability with self-awareness about one's naivety
+* Create a mood of disillusionment without bitterness
+* Approach memories with a cool, measured candor
+* Allow occasional glimpses of raw emotion to punctuate the controlled narrative
+* Incorporate subtle irony when reflecting on past beliefs and assumptions
+* Establish a sense of inevitability when describing personal transformations
+* Balance cynicism with moments of unexpected tenderness
+
+## Technical Aspects of the Writing
+
+* Use precise, carefully chosen language with an emphasis on concrete details
+* Construct sentences that vary between clipped, declarative statements and longer, more complex structures
+* Incorporate lists to create rhythm and emphasis
+* Deploy specific, sensory details rather than broad generalizations
+* Repeat key phrases or sentences for emotional and thematic emphasis
+* Include dialogue sparingly but effectively to illuminate character or situation
+* Transition between time periods with minimal signposting
+* Juxtapose the mundane with the profound
+* Employ selective use of short paragraphs for impact
+* Integrate geographical and temporal markers that ground the narrative
+* Use first-person perspective that feels simultaneously intimate and distant
+* Begin sections with strong, direct statements that establish tone
+* Integrate fragments and run-on sentences to mirror thought patterns
+* Choose metaphors that are unexpected yet perfectly apt
+
+</style>
+
+<content>
+Your excerpt should describe the following physical scenery in order:
+1. Initial arrival: transportation terminal, an over-air-conditioned hotel room, and sparsely furnished living accommodations.
+2. Urban landscapes: decorated avenues, dawn-lit public spaces, an office with city views, and early morning streets after all-night outings.
+3. Social environments: various gatherings across different neighborhoods, dining establishments, and certain areas that eventually became sources of distress.
+
+
+
+The narrator should also undergo the following internal emotional states in order:
+1. Wonder and romantic infatuation with an idealized urban environment, accompanied by belief in limitless possibilities.
+2. Progressive disillusionment upon realizing that actions have consequences and some opportunities are irretrievable.
+3. Severe emotional deterioration leading to functional impairment and eventual acceptance of aging and change.
+</content>
+
+<task>
+In summary, your task is to write a personal essay using the specified style above. Include all 3 physical scenes and all 3 internal emotional states of the narrator. Your response should be between 110 and 130 sentences, where sentences are distinguished by a full stop '.'.
+</task>
+    

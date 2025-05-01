@@ -12,15 +12,16 @@ class TextGenerator:
         """Initialize the Claude API client"""
         return anthropic.Anthropic(api_key=self.api_key)
     
-    def generate(self, prompt_template, system_setting, **prompt_params):
+    def generate(self, messages, system_prompt):
         """Generate text using the provided prompt template and parameters"""
-        formatted_prompt = prompt_template.format(**prompt_params)
+        # formatted_prompt = prompt_template.format(**prompt_params)
         
         response = self.client.messages.create(
             model=self.model_name,
             temperature=1.0,
+            system=system_prompt,
             max_tokens=10000,
-            messages=[{"role": "user", "content": formatted_prompt}]
+            messages=messages
         )
         
         return response.content[0].text

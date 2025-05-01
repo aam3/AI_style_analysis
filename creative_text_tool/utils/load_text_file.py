@@ -1,6 +1,6 @@
 def load_text_file(file_path):
 
     with open(file_path, 'r') as file:
-        data = file.read().replace('\n', '')
+        content = file.read()  # Reads the entire file as a single string with all formatting
 
-    return(data)
+    return(content)

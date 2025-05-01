@@ -1,0 +1,29 @@
+Using between 110 and 130 sentences, write an essay in which a young adult moves to a city for what was intended to be a brief stay, spends several years working and socializing before experiencing emotional decline, marrying, and permanently relocating elsewhere..
+
+<content>
+Your response should describe the following physical scenery in order:
+1. Arrival at an airport followed by an initial stay in an uncomfortable hotel room with a mistaken view.
+2. Various urban locations including minimally furnished living spaces, commercial streets, office buildings with illuminated signs, and rain-slicked streets at night.
+3. Sensory experiences including tastes and smells of the city, weather phenomena affecting living quarters, and early morning light after sleepless nights.
+
+
+
+The narrator should also undergo the following internal emotional states in order:
+1. Initial enchantment and infatuation with urban life, accompanied by feelings of unlimited potential and viewing oneself as a temporary visitor.
+2. Development of romantic attachment while maintaining psychological distance, avoiding commitment to permanence.
+3. Ultimate disillusionment and emotional exhaustion, leading to detachment, uncontrollable sadness, and recognition of having overstayed.
+
+</content>
+
+<style>
+Adopt a writing voice/style that is distinctly YOURS. Describe emotions with exceptional knowing and humanity. EMBODY a human and FEEL the depth of emotion. 
+</style>
+
+<task>
+In summary, your task is to write a personal essay as the narrator with your own voice.
+</task>
+
+<requirements>
+Include all 3 physical scenes and all 3 internal emotional states of the narrator. Your response should be between 110 and 130 sentences, where sentences are distinguished by a full stop '.'.
+</requirements>
+    
